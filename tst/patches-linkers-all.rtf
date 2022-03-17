@@ -1,0 +1,116 @@
+* patches for Ficoll
+* Natalia Ostrowska, Joanna Trylska, Michael Feig
+* February 2022
+*
+32 1
+
+PRES GG23          -0.27  ! apply to GLC:C2 -> MGL3:C3
+dele atom 1HO2
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C2  CC3161    0.09 !   like MELZ:2C3
+!ATOM 1H2  HCA1      0.09   
+ATOM 1O2  OC301    -0.36
+ATOM 2C3  CC322     0.00 !   like IMAL:2C6
+!ATOM 2H31  HCA1      0.09 
+!ATOM 2H32  HCA1      0.09 
+BOND 1O2  2C3
+
+PRES FG11          -0.36  ! apply to FRU:C1 -> MGL:C1
+dele atom 1HO1
+dele atom 2HO1
+dele atom 2O1
+GROU
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09
+ATOM 1O1  OC301    -0.36
+ATOM 1C1  CC321     0.00   !   like IMAL:2C6
+!ATOM 1H11 HCA2      0.09
+!ATOM 1H12 HCA2      0.09 
+BOND 2C1  1O1
+
+PRES GG21          -0.27 ! apply to GLC:C2 -> MGL:C1
+dele atom 1HO2
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C2  CC3161    0.09  !   like MELZ:2C3
+!ATOM 1H1  HCA1      0.09  
+ATOM 1O2  OC301    -0.36   
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O2  2C1
+
+PRES FG13          -0.36  ! apply to FRU:C1 -> MGL:C3
+dele atom 2HO3
+dele atom 2O3
+dele atom 1HO1
+GROU
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H31 HCA2      0.09
+!ATOM 2H32 HCA2      0.09
+ATOM 1O1  OC301    -0.36
+ATOM 1C1  CC321     0.00  !   like IMAL:2C6
+!ATOM 1H11 HCA2      0.09
+!ATOM 1H12 HCA2      0.09 
+BOND 2C3  1O1
+
+PRES FG63           -0.27 !  apply to FRU:C6 -- MGL:C3
+dele atom 1HO6
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C6  CC321     0.00  !   like IMAL:2C6
+!ATOM 1H3  HCA1      0.09
+!ATOM 1H3  HCA1      0.09
+ATOM 1O6  OC301    -0.36
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H31 HCA2      0.09
+!ATOM 2H32 HCA2      0.09 
+BOND 1O6  2C3
+
+PRES FG61           -0.27 !  apply to FRU:C6 -- MGL:C1
+dele atom 1HO6
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C6  CC321     0.00  !   like IMAL:2C6
+!ATOM 1H3  HCA1      0.09
+!ATOM 1H3  HCA1      0.09
+ATOM 1O6  OC301    -0.36
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O6  2C1
+
+PRES GG63           -0.27 !  apply to GLC:C6 -- MGL:C3
+dele atom 1HO6
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C6  CC321     0.00  !   like IMAL:2C6
+!ATOM 1H3  HCA1      0.09
+!ATOM 1H3  HCA1      0.09
+ATOM 1O6  OC301    -0.36
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H31 HCA2      0.09
+!ATOM 2H32 HCA2      0.09 
+BOND 1O6  2C3
+
+PRES GG61           -0.27 !  apply to GLC:C6 -- MGL:C1
+dele atom 1HO6
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C6  CC321     0.00  !   like IMAL:2C6
+!ATOM 1H3  HCA1      0.09
+!ATOM 1H3  HCA1      0.09
+ATOM 1O6  OC301    -0.36
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O6  2C1
+
