@@ -1,6 +1,6 @@
 * patches for Ficoll
 * Natalia Ostrowska, Joanna Trylska, Michael Feig
-* February 2022
+* September 2022
 *
 32 1
 
@@ -58,7 +58,7 @@ ATOM 1C1  CC321     0.00  !   like IMAL:2C6
 !ATOM 1H12 HCA2      0.09 
 BOND 2C3  1O1
 
-PRES FG63           -0.27 !  apply to FRU:C6 -- MGL:C3
+PRES FG63           -0.36 !  apply to FRU:C6 -- MGL:C3
 dele atom 1HO6
 dele atom 2O3
 dele atom 2HO3
@@ -72,7 +72,7 @@ ATOM 2C3  CC322     0.00  !   like IMAL:2C6
 !ATOM 2H32 HCA2      0.09 
 BOND 1O6  2C3
 
-PRES FG61           -0.27 !  apply to FRU:C6 -- MGL:C1
+PRES FG61           -0.36 !  apply to FRU:C6 -- MGL:C1
 dele atom 1HO6
 dele atom 2O1
 dele atom 2HO1
@@ -86,7 +86,7 @@ ATOM 2C1  CC322     0.00  !   like IMAL:2C6
 !ATOM 2H12 HCA2      0.09 
 BOND 1O6  2C1
 
-PRES GG63           -0.27 !  apply to GLC:C6 -- MGL:C3
+PRES GG63           -0.36 !  apply to GLC:C6 -- MGL:C3
 dele atom 1HO6
 dele atom 2O3
 dele atom 2HO3
@@ -100,7 +100,7 @@ ATOM 2C3  CC322     0.00  !   like IMAL:2C6
 !ATOM 2H32 HCA2      0.09 
 BOND 1O6  2C3
 
-PRES GG61           -0.27 !  apply to GLC:C6 -- MGL:C1
+PRES GG61           -0.36 !  apply to GLC:C6 -- MGL:C1
 dele atom 1HO6
 dele atom 2O1
 dele atom 2HO1
@@ -113,4 +113,108 @@ ATOM 2C1  CC322     0.00  !   like IMAL:2C6
 !ATOM 2H11 HCA2      0.09
 !ATOM 2H12 HCA2      0.09 
 BOND 1O6  2C1
+
+PRES GG31          -0.27 ! apply to GLC:C3 -> MGL:C1
+dele atom 1HO3
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C3  CC3161    0.09  !   like MELZ:2C3
+!ATOM 1H3  HCA1      0.09  
+ATOM 1O3  OC301    -0.36   
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O3  2C1
+
+PRES GG33          -0.27 ! apply to GLC:C3 -> MGL:C3
+dele atom 1HO3
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C3  CC3161    0.09  !   like MELZ:2C3
+!ATOM 1H3  HCA1      0.09  
+ATOM 1O3  OC301    -0.36   
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O3  2C3
+
+PRES GG41          -0.27 ! apply to GLC:C4 -> MGL:C1
+dele atom 1HO4
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C4  CC3161    0.09  !   like MELZ:2C3
+!ATOM 1H4  HCA1      0.09  
+ATOM 1O4  OC301    -0.36   
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O4  2C1
+
+PRES GG43          -0.27 ! apply to GLC:C4 -> MGL:C3
+dele atom 1HO4
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C4  CC3161    0.09  !   like MELZ:2C3
+!ATOM 1H4  HCA1      0.09  
+ATOM 1O4  OC301    -0.36   
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O4  2C3
+
+PRES FG31          -0.27 ! apply to FRU:C3 -> MGL:C1
+dele atom 1HO3
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C3  CC3151    0.09  !   like MELZ:2C3
+!ATOM 1H3  HCA1      0.09  
+ATOM 1O3  OC301    -0.36   
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O3  2C1
+
+PRES FG33          -0.27 ! apply to FRU:C3 -> MGL:C3
+dele atom 1HO3
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C3  CC3151    0.09  !   like MELZ:2C3
+!ATOM 1H3  HCA1      0.09  
+ATOM 1O3  OC301    -0.36   
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O3  2C3
+
+PRES FG41          -0.27 ! apply to FRU:C4 -> MGL:C1
+dele atom 1HO4
+dele atom 2O1
+dele atom 2HO1
+GROU
+ATOM 1C4  CC3151    0.09  !   like MELZ:2C3
+!ATOM 1H4  HCA1      0.09  
+ATOM 1O4  OC301    -0.36   
+ATOM 2C1  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O4  2C1
+
+PRES FG43          -0.27 ! apply to FRU:C4 -> MGL:C3
+dele atom 1HO4
+dele atom 2O3
+dele atom 2HO3
+GROU
+ATOM 1C4  CC3151    0.09  !   like MELZ:2C3
+!ATOM 1H4  HCA1      0.09  
+ATOM 1O4  OC301    -0.36   
+ATOM 2C3  CC322     0.00  !   like IMAL:2C6 
+!ATOM 2H11 HCA2      0.09
+!ATOM 2H12 HCA2      0.09 
+BOND 1O4  2C3
 
