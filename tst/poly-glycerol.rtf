@@ -1,0 +1,107 @@
+* topology for di/triglycerol
+*
+32 1
+
+! Michael Feig, Natalia Ostrowska, Joanna Trylska
+
+AUTOGENERATE angles dihedrals patch
+! DEFAults for patching FIRSt and LAST residues
+DEFA FIRS NONE LAST NONE
+
+RESI DGL         0.000  ! di-glycerol 
+GROU                       !
+ATOM C1   CC322     0.050  !             O1-HO1
+ATOM H11  HCA2      0.090  !             |
+ATOM H12  HCA2      0.090  !         H11-C1-H12
+ATOM O1   OC311    -0.650  !             |
+ATOM HO1  HCP1      0.420  !      HO2-O2-C2-H2
+GROU                       !             |
+ATOM C2   CC312     0.140  !         H31-C3-H32
+ATOM H2   HCA1      0.090  !             |
+ATOM O2   OC311    -0.650  !             O3
+ATOM HO2  HCP1      0.420  !             |
+GROU                       !         H41-C4-H42
+ATOM C3   CC322     0.000  !             |
+ATOM H31  HCA2      0.090  !          H5-C5-O5-HO5
+ATOM H32  HCA2      0.090  !             |
+ATOM O3   OC301    -0.360  !         H61-C6-H62
+ATOM C4   CC322     0.000  !             |
+ATOM H41  HCA2      0.090  !             O6-HO6
+ATOM H42  HCA2      0.090  !
+GROU                       !
+ATOM C5   CC312     0.140  !
+ATOM H5   HCA1      0.090  !
+ATOM O5   OC311    -0.650  !
+ATOM HO5  HCP1      0.420  !
+GROU                       !
+ATOM C6   CC322     0.050  !
+ATOM H61  HCA2      0.090  !
+ATOM H62  HCA2      0.090  !
+ATOM O6   OC311    -0.650  !
+ATOM HO6  HCP1      0.420  !
+BOND C1   O1        C1   H11       O1   HO1       C1   H12       C1   C2
+BOND C2   H2        C2   O2        O2   HO2       C2   C3        C3   H31
+BOND C3   O3        C3   H32       O3   C4        C4   H41       C4   H42
+BOND C4   C5        C5   H5        C5   O5        O5   HO5       C5   C6
+BOND C6   H61       C6   H62       C6   O6        O6   HO6
+PATC FIRS NONE LAST NONE
+
+RESI TGL         0.000  ! tri-glycerol 
+GROU                       !
+ATOM C1   CC322     0.050  !             O1-HO1
+ATOM H11  HCA2      0.090  !             |
+ATOM H12  HCA2      0.090  !         H11-C1-H12
+ATOM O1   OC311    -0.650  !             |
+ATOM HO1  HCP1      0.420  !      HO2-O2-C2-H2
+GROU                       !             |
+ATOM C2   CC312     0.140  !         H31-C3-H32
+ATOM H2   HCA1      0.090  !             |
+ATOM O2   OC311    -0.650  !             O3
+ATOM HO2  HCP1      0.420  !             |
+GROU                       !         H41-C4-H42
+ATOM C3   CC322     0.000  !             |
+ATOM H31  HCA2      0.090  !          H5-C5-O5-HO5
+ATOM H32  HCA2      0.090  !             |
+ATOM O3   OC301    -0.360  !         H61-C6-H62
+ATOM C4   CC322     0.000  !             |
+ATOM H41  HCA2      0.090  !             O6
+ATOM H42  HCA2      0.090  !             |
+GROU                       !         H71-C7-H72
+ATOM C5   CC312     0.140  !             |
+ATOM H5   HCA1      0.090  !      HO8-O8-C8-H8
+ATOM O5   OC311    -0.650  !             |
+ATOM HO5  HCP1      0.420  !         H91-C9-H92
+GROU                       !             |
+ATOM C6   CC322     0.000  !             O9-HO9
+ATOM H61  HCA2      0.090  !
+ATOM H62  HCA2      0.090  !
+ATOM O6   OC301    -0.360  !     
+ATOM C7   CC322     0.000  !    
+ATOM H71  HCA2      0.090  !   
+ATOM H72  HCA2      0.090  !
+GROU                       !
+ATOM C8   CC312     0.140  !
+ATOM H8   HCA1      0.090  !
+ATOM O8   OC311    -0.650  !
+ATOM HO8  HCP1      0.420  !
+GROU                       !
+ATOM C9   CC322     0.050  !
+ATOM H91  HCA2      0.090  !
+ATOM H92  HCA2      0.090  !
+ATOM O9   OC311    -0.650  !
+ATOM HO9  HCP1      0.420  !
+BOND C1   O1        C1   H11       O1   HO1       C1   H12       C1   C2
+BOND C2   H2        C2   O2        O2   HO2       C2   C3        C3   H31
+BOND C3   O3        C3   H32       O3   C4        C4   H41       C4   H42
+BOND C4   C5        C5   H5        C5   O5        O5   HO5       C5   C6
+BOND C6   H61       C6   H62       C6   O6        O6   C7        C7   H71
+BOND C7   H72       C7   C8        C8   H8        C8   O8        O8   HO8
+BOND C8   C9        C9   H91       C9   H92       C9   O9        O9   HO9  
+PATC FIRS NONE LAST NONE
+
+
+END
+
+
+END
+
